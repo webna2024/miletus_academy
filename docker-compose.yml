@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  web:
+    build: ./miletus_academy01
+    command: sh -c "python manage.py wait_for_db && 
+                    python manage.py migrate &&
+                    python manage.py runserver 0.0.0.0:8002"
+    volumes:
+      - ./miletus_academy01:/app
+    ports:
+      - "8002:8002"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://miletus_user:miletus_password@db:5432/miletus_db
+
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=miletus_db
+      - POSTGRES_USER=webna
+      - POSTGRES_PASSWORD=webna@2024
+volumes:
+  postgres_data:
