@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "دوره جامع توسعه وب 2024",
+    "teacher": "محمدطه دلشادی",
+    "star": 4.7,
+    "image":"/src/db/pictures/python-advanced.webp/",
+    "price": 1200000
+  },
+  {
+    "id": 2,
+    "title": "دوره جامع توسعه وب 2024",
+    "teacher": "محمدطه دلشادی",
+    "star": 4.7,
+    "image":"/src/db/pictures/python-advanced.webp/",
+    "price": 1200000
+  },
+  {
+    "id": 3,
+    "title": "دوره جامع توسعه وب 2024",
+    "teacher": "محمدطه دلشادی",
+    "star": 4.7,
+    "image":"/src/db/pictures/python-advanced.webp/",
+    "price": 1200000
+  },
+  {
+    "id": 4,
+    "title": "دوره جامع توسعه وب 2024",
+    "teacher": "محمدطه دلشادی",
+    "star": 4.7,
+    "image":"/src/db/pictures/python-advanced.webp/",
+    "price": 1200000
+  }
+]

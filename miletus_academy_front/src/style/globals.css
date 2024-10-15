@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+@layer base {
+  @font-face {
+    font-family: "Yekan";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url(./fonts/Yekan.woff) format("woff");
+  }
+}
+@layer utilities {
+  .noscrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 4px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #9ca3af;
+    border-radius: 100vh;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #4b5563;
+  }
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Yekan;
+}
+section {
+  @apply px-10 mb-20 flex flex-col gap-5  w-full;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
